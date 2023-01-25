@@ -3,6 +3,8 @@ include(GoogleTest)
 file(GLOB_RECURSE SRC *.c *.cpp)
 add_executable(Salsa20Tests ${SRC})
 
+sanatize("address,undefined")
+
 target_common_warnings(Salsa20Tests)
 
 FetchContent_Declare(
