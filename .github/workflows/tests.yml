@@ -13,5 +13,4 @@ jobs:
       - uses: actions/checkout@v3
       - run: cmake -Bbuild
       - run: cmake --build build --target Salsa20Tests
-      - working-directory: ./build
-        run: ctest --schedule-random --timeout 86400
+      - run: ctest --test-dir build --schedule-random --timeout 86400
