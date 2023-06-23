@@ -4,13 +4,14 @@ include(FetchContent)
 FetchContent_Declare(
   CMakeModules
   GIT_REPOSITORY https://github.com/ZIMO-Elektronik/CMakeModules.git
-  GIT_TAG v0.0.5
+  GIT_TAG v0.0.7
   SOURCE_DIR ${CMAKE_BINARY_DIR}/CMakeModules)
 FetchContent_MakeAvailable(CMakeModules)
 
+version_from_git()
 project(
   Salsa20
-  VERSION 0.3.0
+  VERSION ${VERSION_FROM_GIT}
   LANGUAGES C CXX)
 
 add_library(Salsa20 STATIC src/salsa20.c)
