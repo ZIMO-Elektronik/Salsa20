@@ -5,7 +5,7 @@ add_executable(Salsa20Tests ${SRC})
 
 sanatize("address,undefined")
 
-target_common_warnings(Salsa20Tests)
+target_common_warnings(Salsa20Tests PRIVATE)
 
 FetchContent_Declare(
   googletest
