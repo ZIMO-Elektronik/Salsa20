@@ -2,7 +2,7 @@
 
 [![build](https://github.com/ZIMO-Elektronik/Salsa20/actions/workflows/build.yml/badge.svg)](https://github.com/ZIMO-Elektronik/Salsa20/actions/workflows/build.yml) [![tests](https://github.com/ZIMO-Elektronik/Salsa20/actions/workflows/tests.yml/badge.svg)](https://github.com/ZIMO-Elektronik/Salsa20/actions/workflows/tests.yml)
 
-<img src="data/images/logo.png" width="10%" align="right">
+<img src="data/images/logo.svg" width="10%" align="right">
 
 Original implementation of the [Salsa20](https://en.wikipedia.org/wiki/Salsa20) stream cipher.
 
