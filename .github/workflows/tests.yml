@@ -7,14 +7,5 @@ on:
     branches: [master]
 
 jobs:
-  x86_64-pc-linux-gnu-gcc:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: git fetch --unshallow --tags
-      - run: cmake -Bbuild
-        env:
-          CC:   gcc-12
-          CXX:  g++-12
-      - run: cmake --build build --target Salsa20Tests
-      - run: ctest --test-dir build --schedule-random --timeout 86400
+  tests:
+    uses: ZIMO-Elektronik/.github-workflows/.github/workflows/ctest.yml@v0.0.1
