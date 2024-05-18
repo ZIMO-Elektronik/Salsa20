@@ -3,16 +3,21 @@ include(GoogleTest)
 file(GLOB_RECURSE SRC *.c *.cpp)
 add_executable(Salsa20Tests ${SRC})
 
-sanitize("address,undefined")
+sanitize(address,undefined)
 
 target_common_warnings(Salsa20Tests PRIVATE)
 
-FetchContent_Declare(
+cpmaddpackage(
+  NAME
   googletest
-  GIT_REPOSITORY https://github.com/google/googletest.git
-  GIT_TAG main
-  GIT_PROGRESS TRUE)
-FetchContent_MakeAvailable(googletest)
+  GITHUB_REPOSITORY
+  "google/googletest"
+  GIT_TAG
+  main
+  SYSTEM
+  YES
+  OPTIONS
+  "INSTALL_GTEST OFF")
 
 find_package(OpenSSL REQUIRED)
 target_link_libraries(
