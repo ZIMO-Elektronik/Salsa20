@@ -1,6 +1,6 @@
 # Salsa20
 
-[![build](https://github.com/ZIMO-Elektronik/Salsa20/actions/workflows/build.yml/badge.svg)](https://github.com/ZIMO-Elektronik/Salsa20/actions/workflows/build.yml) [![tests](https://github.com/ZIMO-Elektronik/Salsa20/actions/workflows/tests.yml/badge.svg)](https://github.com/ZIMO-Elektronik/Salsa20/actions/workflows/tests.yml)
+[![build](https://github.com/ZIMO-Elektronik/Salsa20/actions/workflows/build.yml/badge.svg)](https://github.com/ZIMO-Elektronik/Salsa20/actions/workflows/build.yml) [![tests](https://github.com/ZIMO-Elektronik/Salsa20/actions/workflows/tests.yml/badge.svg)](https://github.com/ZIMO-Elektronik/Salsa20/actions/workflows/tests.yml) [![license](https://img.shields.io/github/license/ZIMO-Elektronik/Salsa20)](https://github.com/ZIMO-Elektronik/Salsa20/raw/master/LICENSE)
 
 <img src="data/images/logo.svg" width="10%" align="right">
 
