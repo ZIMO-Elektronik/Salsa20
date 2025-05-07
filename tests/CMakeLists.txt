@@ -7,17 +7,7 @@ sanitize(address,undefined)
 
 target_common_warnings(Salsa20Tests PRIVATE)
 
-cpmaddpackage(
-  NAME
-  googletest
-  GITHUB_REPOSITORY
-  "google/googletest"
-  GIT_TAG
-  main
-  SYSTEM
-  YES
-  OPTIONS
-  "INSTALL_GTEST OFF")
+cpmaddpackage(URI "gh:google/googletest#main" OPTIONS "INSTALL_GTEST OFF")
 
 find_package(OpenSSL REQUIRED)
 target_link_libraries(
