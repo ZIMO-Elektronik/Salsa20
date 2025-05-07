@@ -29,22 +29,18 @@ int bigtest() {
         if (d[i] != m[i]) return 1;
       switch (bytes % 3) {
         case 0:
-          for (i = 0; (i < bytes) && (i < 32); ++i)
-            k[i] ^= c[i];
+          for (i = 0; (i < bytes) && (i < 32); ++i) k[i] ^= c[i];
           break;
         case 1:
-          for (i = 0; (i < bytes) && (i < 8); ++i)
-            v[i] ^= c[i];
+          for (i = 0; (i < bytes) && (i < 8); ++i) v[i] ^= c[i];
           break;
         case 2:
-          for (i = 0; i < bytes; ++i)
-            m[i] = c[i];
+          for (i = 0; i < bytes; ++i) m[i] = c[i];
           break;
       }
     }
     MD5_Final(k, &fingerprint);
-    for (i = 0; i < 32; ++i)
-      printf("%02x", k[i]);
+    for (i = 0; i < 32; ++i) printf("%02x", k[i]);
     printf("\n");
     fflush(stdout);
   }
@@ -55,8 +51,7 @@ int bigtest() {
     MD5_Update(&fingerprint, c, 4096);
   }
   MD5_Final(k, &fingerprint);
-  for (i = 0; i < 16; ++i)
-    printf("%02x", k[i]);
+  for (i = 0; i < 16; ++i) printf("%02x", k[i]);
   printf("\n");
   fflush(stdout);
 

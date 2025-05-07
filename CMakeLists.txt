@@ -36,7 +36,7 @@ if(PROJECT_IS_TOP_LEVEL)
     "https://github.com/ZIMO-Elektronik/.github/raw/master/data/.clang-format"
     ${CMAKE_CURRENT_LIST_DIR}/.clang-format)
   file(GLOB_RECURSE SRC tests/*.c tests/*.cpp)
-  add_clang_format_target(ZSUFormat OPTIONS -i FILES ${SRC})
+  add_clang_format_target(Salsa20Format OPTIONS -i FILES ${SRC})
 endif()
 
 if(BUILD_TESTING
