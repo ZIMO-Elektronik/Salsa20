@@ -29,6 +29,9 @@ else()
     PRIVATE include/salsa20)
 endif()
 
+# https://github.com/espressif/esp-idf/issues/17773
+target_compile_options(Salsa20 PRIVATE -Wno-error)
+
 if(PROJECT_IS_TOP_LEVEL)
   include(CTest)
   file(
